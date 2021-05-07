@@ -12,6 +12,7 @@
   - [single parameter arrow function](#single-parameter-arrow-function)
   - [multi parameter arrow function](#multi-parameter-arrow-function)
   - [empty parameter arrow function](#empty-parameter-arrow-function)
+- [Callback Function](#Callback-Function)
 - [Function Arguments](#Function-Arguments)
 
 ## Normal Function
@@ -180,6 +181,24 @@ const num = () => 18 + 19;
 
 const result = num();
 console.log(result); // output: 37
+```
+
+## Callback Function
+
+```js
+function explain_callback(name, age, task) {
+  console.log('Hello ', name);
+  console.log('Your age ', age);
+  task();
+}
+function washHand() {
+  console.log('wash hand with soap.');
+}
+function takeShower() {
+  console.log('Take Shower');
+}
+explain_callback('Shonjoy', 19, washHand);
+explain_callback('Joy', 18, takeShower);
 ```
 
 ## Function-Arguments
