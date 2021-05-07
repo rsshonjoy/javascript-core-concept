@@ -10,4 +10,4 @@ coming soon...
 
 ### Object
 
-- **[01](data-type/object/function 'Function')** - **[What is SASS](/data-type/object/function.md)**
+- **[01](data-type/object/function 'Function')** - **[Function](/data-type/object/function.md)**
