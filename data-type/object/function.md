@@ -12,6 +12,7 @@
   - [Rest Parameterized Function](#Rest-Parameterized-Function)
   - [Function Invocation](#Function-Invocation)
   - [Function Call](#Function-Call)
+- [Anonymous Function](#Anonymous-Function)
 - [Arrow Function](#Arrow-Function)
   - [single parameter arrow function](#single-parameter-arrow-function)
   - [multi parameter arrow function](#multi-parameter-arrow-function)
@@ -26,6 +27,7 @@
 ```js
 function addition() {
   var num = 5;
+  Anonymous;
   var result = num + num;
   console.log('Addition = ' + result);
 }
@@ -155,7 +157,7 @@ function myFunction(x, y) {
 }
 
 const fullName = new myFunction('Shonjoy', 'Das');
-console.log(fullName.firstName); // Shonjoy
+console.log(fullName.firstName); // output: Shonjoy
 ```
 
 ### Function Call
@@ -205,6 +207,57 @@ const person1 = {
 };
 
 console.log(person.fullName.call(person1, 'Dhaka', 'Bangladesh')); // output: Shonjoy Das from Dhaka,Bangladesh
+```
+
+## Anonymous Function
+
+[Agenda](#Agenda)
+
+- A function without a name
+- It can be declared dynamically at runtime
+- A anonymous function can be assigned within a variable
+
+### Return Anonymous Function
+
+```js
+const myFunc = function () {
+  return 'Hello World';
+};
+
+console.log(myFunc()); // Hello World
+```
+
+### Parameterized Anonymous Function
+
+```js
+const myFunc = function (x) {
+  return x;
+};
+
+console.log(myFunc('Hello World')); // Hello World
+```
+
+### Rest Parameterized Anonymous Function
+
+```js
+const myFunc = function (...x) {
+  return x;
+};
+
+console.log(myFunc(1, 2, 3, 4, 5, 6, 7)); // output: (7) [1, 2, 3, 4, 5, 6, 7]
+```
+
+### Reassign anonymous function use only var keyword
+
+```js
+var myFunc = function () {
+  return 'Hello John';
+};
+var myFunc = function () {
+  return 'Hello World';
+};
+
+console.log(myFunc()); // Hello World
 ```
 
 ## Arrow Function
