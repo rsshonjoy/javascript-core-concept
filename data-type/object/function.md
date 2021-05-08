@@ -13,6 +13,7 @@
   - [Function Invocation](#Function-Invocation)
   - [Function Call](#Function-Call)
 - [Anonymous Function](#Anonymous-Function)
+- [Self Invoking Function](#Self-Invoking-Function)
 - [Arrow Function](#Arrow-Function)
   - [single parameter arrow function](#single-parameter-arrow-function)
   - [multi parameter arrow function](#multi-parameter-arrow-function)
@@ -258,6 +259,30 @@ var myFunc = function () {
 };
 
 console.log(myFunc()); // Hello World
+```
+
+## Self Invoking Function
+
+[Agenda](#Agenda)
+
+### Immediately Invoked Function Expression (IIFE)
+
+- Example
+
+```js
+(function () {
+  console.log('My favorite number is 3'); // output: My favorite number is 3
+})();
+```
+
+```js
+-Example(
+  (favNumber = function (num = 3) {
+    console.log('My favorite number is ' + num); // output: My favorite number is 3
+  })
+)();
+
+favNumber(7); // output: My favorite number is 7
 ```
 
 ## Arrow Function
