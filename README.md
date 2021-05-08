@@ -13,6 +13,6 @@ coming soon...
 
 - **[01](data-type/object/function 'Function')** - **[Function](/data-type/object/function.md)**
 
-## 1 -&nbsp; Extensions for JavaScript
+## 1 -&nbsp; VS Extensions for JavaScript
 
 coming soon...

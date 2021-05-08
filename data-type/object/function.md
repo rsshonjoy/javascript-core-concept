@@ -10,6 +10,7 @@
   - [Returning Function](#Returning-Function)
   - [Parameterized Function](#Parameterized-Function)
   - [Rest Parameterized Function](#Rest-Parameterized-Function)
+  - [Function Invocation](#Function-Invocation)
 - [Arrow Function](#Arrow-Function)
   - [single parameter arrow function](#single-parameter-arrow-function)
   - [multi parameter arrow function](#multi-parameter-arrow-function)
@@ -107,15 +108,14 @@ console.log('rest parameter = ' + result); // rest parameter = 27
 - normal + Rest parameterized function
 
 ```js
-function calculator2(a, b, ...numbers) {
-  let add = a + b;
+function calculator(a, b, ...numbers) {
   let sum = 0;
   for (let i of numbers) {
     sum = sum + i;
   }
   return sum;
 }
-var result = calculator2(20, 30, 4, 6, 7, 5);
+var result = calculator(20, 30, 4, 6, 7, 5);
 console.log('normal + Rest parameter = ' + result); // normal + Rest parameter = 22
 ```
 
@@ -127,6 +127,34 @@ const doubleIt = function (num) {
 };
 const result = doubleIt(7);
 console.log(result); // output: 14
+```
+
+### Function Invocation
+
+- Invoking a Function as a Method
+
+```js
+const myObject = {
+  firstName: 'Shonjoy',
+  lastName: 'Das',
+  fullName: function () {
+    return this.firstName + ' ' + this.lastName;
+  },
+};
+const fullName = myObject.fullName();
+console.log(fullName); // output: Shonjoy Das
+```
+
+- Invoking a function with a Function Constructor
+
+```js
+function myFunction(x, y) {
+  this.firstName = x;
+  this.lastName = y;
+}
+
+const fullName = new myFunction('Shonjoy', 'Das');
+console.log(fullName.firstName); // Shonjoy
 ```
 
 ## Arrow Function
