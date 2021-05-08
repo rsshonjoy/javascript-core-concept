@@ -131,7 +131,7 @@ console.log(result); // output: 14
 
 ## Arrow Function
 
-- [Agenda](#Agenda)
+[go to Agenda](#Agenda)
 
 ### single parameter arrow function
 
@@ -189,7 +189,7 @@ console.log(result); // output: 37
 
 ## Callback Function
 
-- [Agenda](#Agenda)
+[go to Agenda](#Agenda)
 
 ```js
 function explain_callback(name, age, task) {
@@ -209,7 +209,7 @@ explain_callback('Joy', 18, takeShower);
 
 ## Function Arguments
 
-- [Agenda](#Agenda)
+[go to Agenda](#Agenda)
 
 - print all elements of variable
 
