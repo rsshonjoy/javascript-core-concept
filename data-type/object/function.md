@@ -11,6 +11,7 @@
   - [Parameterized Function](#Parameterized-Function)
   - [Rest Parameterized Function](#Rest-Parameterized-Function)
   - [Function Invocation](#Function-Invocation)
+  - [Function Call](#Function-Call)
 - [Arrow Function](#Arrow-Function)
   - [single parameter arrow function](#single-parameter-arrow-function)
   - [multi parameter arrow function](#multi-parameter-arrow-function)
@@ -155,6 +156,55 @@ function myFunction(x, y) {
 
 const fullName = new myFunction('Shonjoy', 'Das');
 console.log(fullName.firstName); // Shonjoy
+```
+
+### Function Call
+
+```js
+const person = {
+  fullName: function () {
+    return this.firstName + ' ' + this.lastName;
+  },
+};
+
+const person1 = {
+  firstName: 'Shonjoy',
+  lastName: 'Das',
+};
+const person2 = {
+  firstName: 'Joy',
+  lastName: 'Das',
+};
+
+console.log(person.fullName.call(person1)); // output: Shonjoy Das
+console.log(person.fullName.call(person2)); // output: Joy Das
+```
+
+- call() Method with Arguments
+
+```js
+const person = {
+  fullName: function (city, country) {
+    return (
+      this.firstName +
+      ' ' +
+      this.lastName +
+      ' ' +
+      'from' +
+      ' ' +
+      city +
+      ',' +
+      country
+    );
+  },
+};
+
+const person1 = {
+  firstName: 'Shonjoy',
+  lastName: 'Das',
+};
+
+console.log(person.fullName.call(person1, 'Dhaka', 'Bangladesh')); // output: Shonjoy Das from Dhaka,Bangladesh
 ```
 
 ## Arrow Function
