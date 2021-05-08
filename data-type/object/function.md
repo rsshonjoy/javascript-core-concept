@@ -2,6 +2,8 @@
   <h1 align="center">JavaScript</h1>
   <h3 align="center">--- function ---</h3>
 
+## Agenda:
+
 - [Normal Function](#Normal-Function)
   - [Calling a Function](#Calling-a-Function)
   - [Function expression](#Function-expression)
@@ -127,7 +129,7 @@ const result = doubleIt(7);
 console.log(result); // output: 14
 ```
 
-## Arrow Function
+## Arrow Function - [Agenda](#Agenda)
 
 ### single parameter arrow function
 
@@ -183,7 +185,7 @@ const result = num();
 console.log(result); // output: 37
 ```
 
-## Callback Function
+## Callback Function - [Agenda](#Agenda)
 
 ```js
 function explain_callback(name, age, task) {
@@ -201,7 +203,7 @@ explain_callback('Shonjoy', 19, washHand);
 explain_callback('Joy', 18, takeShower);
 ```
 
-## Function-Arguments
+## Function-Arguments - [Agenda](#Agenda)
 
 - print all elements of variable
 
