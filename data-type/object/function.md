@@ -14,7 +14,7 @@
   - [single parameter arrow function](#single-parameter-arrow-function)
   - [multi parameter arrow function](#multi-parameter-arrow-function)
   - [empty parameter arrow function](#empty-parameter-arrow-function)
-- [Callback Function](#Callback-Function)
+- [Callback Function](#callback-function)
 - [Function Arguments](#Function-Arguments)
 
 ## Normal Function
@@ -129,7 +129,9 @@ const result = doubleIt(7);
 console.log(result); // output: 14
 ```
 
-## Arrow Function - [Agenda](#Agenda)
+## Arrow Function
+
+- [Agenda](#Agenda)
 
 ### single parameter arrow function
 
@@ -185,7 +187,9 @@ const result = num();
 console.log(result); // output: 37
 ```
 
-## Callback Function - [Agenda](#Agenda)
+## Callback Function
+
+- [Agenda](#Agenda)
 
 ```js
 function explain_callback(name, age, task) {
@@ -203,7 +207,9 @@ explain_callback('Shonjoy', 19, washHand);
 explain_callback('Joy', 18, takeShower);
 ```
 
-## Function-Arguments - [Agenda](#Agenda)
+## Function Arguments
+
+- [Agenda](#Agenda)
 
 - print all elements of variable
 
