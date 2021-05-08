@@ -20,6 +20,8 @@
   - [empty parameter arrow function](#empty-parameter-arrow-function)
 - [Callback Function](#callback-function)
 - [Function Arguments](#Function-Arguments)
+- [Short hand method function](#Short-hand-method-function)
+- [Generator Function](#Generator-Function)
 
 ## Normal Function
 
@@ -289,6 +291,12 @@ favNumber(7); // output: My favorite number is 7
 
 [Agenda](#Agenda)
 
+- To write smaller function syntax.
+- Arrow function make your code more readable and structured.
+- Arrow function are anonymous function.
+- Can declare without the function keyword.
+- Arrow function cannot be used as the Constructors.
+
 ### single parameter arrow function
 
 ```js
@@ -402,4 +410,40 @@ function addNumber(num1, num2) {
 }
 var result = addNumber(3, 5, 2);
 console.log(result);
+```
+
+## Short hand method function
+
+[Agenda](#Agenda)
+
+```js
+const programming = {
+  items: [],
+  add(...items) {
+    this.items.push(...items);
+  },
+  get(index) {
+    return this.items[index];
+  },
+};
+programming.add('Python', 'JavaScript', 'HTML');
+console.log(programming.get(1));
+```
+
+## Generator Function
+
+[Agenda](#Agenda)
+
+```js
+function* indexGenerator() {
+  let index = 0;
+  while (true) {
+    yield index++;
+  }
+}
+
+const g = indexGenerator();
+console.log(g.next().value); // output: 0
+console.log(g.next().value); // output: 1
+console.log(g.next().value); // output: 2
 ```
