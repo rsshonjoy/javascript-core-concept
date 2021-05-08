@@ -275,12 +275,12 @@ console.log(myFunc()); // Hello World
 })();
 ```
 
+- Example
+
 ```js
--Example(
-  (favNumber = function (num = 3) {
-    console.log('My favorite number is ' + num); // output: My favorite number is 3
-  })
-)();
+(favNumber = function (num = 3) {
+  console.log('My favorite number is ' + num); // output: My favorite number is 3
+})();
 
 favNumber(7); // output: My favorite number is 7
 ```
